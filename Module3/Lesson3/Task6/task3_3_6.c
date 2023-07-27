@@ -21,7 +21,6 @@ void SIGUSR2_listener()
 	blockFile = false;
 } 
 
-
 int getRandInt(const int min, const int max)
 {
 	return rand() % (max - min + 1) + min;
