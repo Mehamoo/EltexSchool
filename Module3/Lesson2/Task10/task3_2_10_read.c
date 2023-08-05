@@ -5,8 +5,6 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-int getRandInt(const int min, const int max);
-
 int main()
 {
 	int fd_fifo;
@@ -26,9 +24,4 @@ int main()
 	}
 	
 	exit(EXIT_SUCCESS);
-}
-
-int getRandInt(const int min, const int max)
-{
-	return rand() % (max - min + 1) + min;
 }
